@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+body p {
+  color: #534C64;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+
+.nav-container {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-left img {
+  width: 70px;
+}
+
+.nav-left p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-1 {
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 0;
+  background: rgba(11, 2, 35, 0.10);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+}
+
+.pink-text {
+  color: #FF42A5;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-right {
+    margin-top: 20px;
+  }
+
+  .nav-left p {
+    font-size: 20px;
+  }
+}
+
+/* nav section ends here  */
+
+
+/* Hero / banner style starts here */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.hero-container {
+  display: flex;
+  width: 90%;
+  max-width: 1400px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.hero-text {
+  background-image: url("/images/Group 14.png");
+  width: 50%;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+}
+
+.btn-2,
+.btn-3 {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-2 {
+  background-color: #F948B2;
+  border: none;
+}
+
+.btn-3 {
+  background-color: #4EC5F7;
+  border: none;
+}
+
+.hero-img {
+  width: 50%;
+}
+
+/* Hero / banner style END here */
+
+/* main section starts here  */
+.online-game-container {
+
+  width: 1400px;
+  margin: 0 auto;
+
+}
+
+
+.online-game-text {
+
+  text-align: center;
+
+}
+
+.online-game-image {
+
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.online-game-image img {
+  width: 20%;
+
+}
+
+
+
+.play-instant-container {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.play-instant-text {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.play-instant-text h3 {
+  font-size: 28px;
+  color: #f948b2;
+  margin-bottom: 20px;
+}
+
+.play-instant-img {
+  min-height: 50px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.play-instant-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.play-instant-img-position {
+  position: absolute;
+  bottom: -80px;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  .play-instant-container {
+    flex-direction: column;
+  }
+
+  .play-instant-text {
+    padding-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .play-instant-img-position {
+    bottom: -40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .play-instant-text h3 {
+    font-size: 24px;
+  }
+}
+
+
+
+/* play-instant-ends-here  */
+
+/* nine icon starts here  */
+.nine-icon {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+
+
+
+/* footer starts here  */
+
+footer {
+
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+
+
+}
+
+
+
+/* ======= my code ====  */
+.online-game-container1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.online-game-text1 h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.online-game-text1 p {
+  font-size: 16px;
+}
+
+.online-game-image-container1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  justify-content: center;
+}
+
+.game-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.online-game-image-container1 img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  transition: opacity 0.3s ease;
+}
+
+.icon-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Font Awesome';
+  font-size: 40px;
+  color: #fff;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.game-link:hover img {
+  opacity: 0.7;
+}
+
+.game-link:hover .icon-overlay {
+  opacity: 1;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  .online-game-image-container1 {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .online-game-image-container1 {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .online-game-text1 h1 {
+    font-size: 20px;
+  }
+}
+
+/* ====== 9 icons ====== */
+
+
+.nine-icon1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.icon-wrapper:hover {
+  border-color: pink;
+  border-width: 10px;
+}
+
+.game-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.icon-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1200px) {
+  .nine-icon1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nine-icon1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nine-icon1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+
+
+
+
+
+/* my hero sec ==================== */
+
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1200px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text,
+  .hero-img {
+    width: 100%;
+  }
+}
+
+/* my hero sec ==================== END */
+
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+
+  .nav-container {
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+
+  }
+
+  .nav-left {
+    flex-direction: column;
+  }
+
+
+  .nav-right {
+
+    flex-direction: column;
+
+    margin: auto;
+
+
+  }
+
+  /* nav response ends here  */
+
+
+}
